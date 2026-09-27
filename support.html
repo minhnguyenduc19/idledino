@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Idle Dino - Support & Help Center</title>
+  <meta name="description" content="Official Support and Help Center for Idle Dino: Dinosaur Evolution on iOS and Android.">
+  <style>
+    :root {
+      --bg: #0f141c;
+      --card-bg: #18202c;
+      --card-inner: #1e293b;
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+      --accent: #f59e0b;
+      --accent-hover: #d97706;
+      --border: #334155;
+      --link: #38bdf8;
+      --link-hover: #7dd3fc;
+      --success: #10b981;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f8fafc;
+        --card-bg: #ffffff;
+        --card-inner: #f1f5f9;
+        --text: #1e293b;
+        --text-muted: #64748b;
+        --accent: #d97706;
+        --accent-hover: #b45309;
+        --border: #e2e8f0;
+        --link: #0284c7;
+        --link-hover: #0369a1;
+      }
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      background-color: var(--bg);
+      color: var(--text);
+      padding: 32px 16px 64px;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 44px 36px;
+      box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.25);
+    }
+    @media (max-width: 640px) {
+      .container {
+        padding: 24px 18px;
+        border-radius: 14px;
+      }
+    }
+    header {
+      text-align: center;
+      margin-bottom: 36px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 28px;
+    }
+    .app-badge {
+      display: inline-block;
+      background: rgba(245, 158, 11, 0.15);
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+    .quick-contact {
+      background: var(--card-inner);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .quick-contact-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .email-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--accent);
+      color: #000000;
+      font-weight: 700;
+      padding: 12px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.1s;
+      width: fit-content;
+      margin-top: 6px;
+    }
+    .email-button:hover {
+      background: var(--accent-hover);
+      transform: translateY(-1px);
+    }
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin: 32px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .faq-item {
+      background: var(--card-inner);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+    }
+    .faq-question {
+      font-weight: 700;
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    .faq-answer {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .faq-answer a {
+      color: var(--link);
+      text-decoration: none;
+    }
+    .faq-answer a:hover {
+      text-decoration: underline;
+    }
+    .meta-list {
+      list-style: none;
+      margin-top: 12px;
+    }
+    .meta-list li {
+      padding: 6px 0;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    .meta-list strong {
+      color: var(--text);
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+    }
+    footer a {
+      color: var(--link);
+      text-decoration: none;
+      margin: 0 8px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <header>
+      <div class="app-badge">Game Support</div>
+      <h1>Idle Dino Support</h1>
+      <p class="subtitle">Idle Dino: Dinosaur Evolution Help & FAQ Center</p>
+    </header>
+
+    <div class="quick-contact">
+      <div class="quick-contact-title">
+        📬 Need Direct Assistance?
+      </div>
+      <p style="color: var(--text-muted); font-size: 0.95rem;">
+        Have a question about your in-app purchase, found a bug, or have a suggestion to improve the game? We are here to help!
+      </p>
+      <a href="mailto:minhnguyen.de.vn@gmail.com?subject=[Idle%20Dino%20Support]%20Inquiry" class="email-button">
+        ✉️ Contact Support: minhnguyen.de.vn@gmail.com
+      </a>
+      <ul class="meta-list">
+        <li><strong>App:</strong> Idle Dino: Dinosaur Evolution (<code>com.minhnguyen.idledino</code>)</li>
+        <li><strong>Developer:</strong> Minh Nguyen</li>
+        <li><strong>Response Time:</strong> Typically within 24–48 hours</li>
+      </ul>
+    </div>
+
+    <h2>Frequently Asked Questions (FAQ)</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">1. How do I restore my purchases on iOS?</div>
+      <div class="faq-answer">
+        If you reinstalled the game or switched to a new iPhone/iPad, open the in-game <strong>Shop</strong> and tap the <strong>"Restore Purchases"</strong> button. Your non-consumable unlocks (such as <em>Remove Banner Ads</em> or pack entitlements) will be verified through Apple StoreKit and RevenueCat and restored immediately.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">2. I made a purchase but did not receive the items. What should I do?</div>
+      <div class="faq-answer">
+        First, check that your device is connected to the internet and restart the game. If items still do not show up, please email us at <a href="mailto:minhnguyen.de.vn@gmail.com">minhnguyen.de.vn@gmail.com</a> with your Apple receipt or transaction ID from Apple, and we will resolve it promptly.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">3. How is my game progress saved?</div>
+      <div class="faq-answer">
+        Idle Dino stores your gameplay progression (unlocked dinos, upgrades, resources) locally on your device storage so that you can play 100% offline anytime. Ensure you do not uninstall the app without backing up your device via iCloud if you wish to preserve local data.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">4. How can I request account or data deletion?</div>
+      <div class="faq-answer">
+        Idle Dino does not require account creation or store your personal identification on external servers. To reset all local progress, simply clear the app data or uninstall the application. For questions regarding pseudonymous advertising identifiers, please check our <a href="privacy_policy.html">Privacy Policy</a> or email us.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">5. The game crashes or freezes. How do I troubleshoot?</div>
+      <div class="faq-answer">
+        Please ensure your device is running iOS 15.0 or higher. Close background apps, ensure at least 500MB of free storage space, and restart the device. If the problem persists, please contact us detailing your device model and iOS version.
+      </div>
+    </div>
+
+    <h2>Policies & Information</h2>
+    <p style="color: var(--text-muted); font-size: 0.95rem;">
+      For detailed information regarding how data and permissions are handled, please review our complete privacy documentation:
+    </p>
+    <div style="margin-top: 14px;">
+      <a href="privacy_policy.html" style="color: var(--link); font-weight: 600; text-decoration: none;">&rarr; Read our Privacy Policy</a>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Idle Dino &bull; Developed by Minh Nguyen. All rights reserved.</p>
+      <div style="margin-top: 8px;">
+        <a href="privacy_policy.html">Privacy Policy</a> &bull; 
+        <a href="support.html">Support</a>
+      </div>
+    </footer>
+  </main>
+
+</body>
+</html>
