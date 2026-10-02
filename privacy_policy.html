@@ -168,8 +168,8 @@
       <span class="badge">Official Legal Document</span>
       <h1>Privacy Policy for Idle Dino: Dinosaur Evolution</h1>
       <div class="meta">
-        <strong>Effective Date:</strong> September 27, 2026 &bull; 
-        <strong>Last Updated:</strong> September 27, 2026
+        <strong>Effective Date:</strong> October 2, 2026 &bull;
+        <strong>Last Updated:</strong> October 2, 2026
       </div>
     </header>
 
@@ -180,7 +180,7 @@
     <h2>1. Information We Collect</h2>
 
     <h3>A. Information Stored Locally on Your Device</h3>
-    <p>All your dinosaur levels, unlocked species, virtual currencies (Bones, DNA, Amber, Meat), collection books, and battle progress are saved directly on your local device storage (<code>user://save.dat</code>). We do not store or transmit your raw gameplay saves to any private external game server.</p>
+    <p>All your dinosaur levels, unlocked species, virtual currencies (Bones, DNA, Amber, Meat), collection books, and battle progress are saved directly on your local device storage (<code>user://idle_dino_farm.save</code>). We do not store or transmit your raw gameplay saves to any private external game server. A copy may be kept in your own platform account as described in section C below.</p>
 
     <h3>B. Information Collected Automatically by Third-Party SDKs</h3>
     <p>When you play Idle Dino, certain third-party software development kits (SDKs) integrated into the game automatically collect technical, diagnostic, and pseudonymous identifier data:</p>
@@ -199,8 +199,19 @@
       <li><strong>Ad Interaction & Diagnostic Data:</strong> Ad impression metrics, ad view duration, clicks, placement keys (e.g., Rewarded boss multipliers, combat banners), and application performance/crash logs.</li>
     </ul>
 
+    <h3>C. Cloud Save in Your Platform Account</h3>
+    <p>So that you do not lose your progress when you reinstall the Game or change devices, Idle Dino automatically tries to sign you in to your platform's game service when it starts and keeps a copy of your save file there:</p>
+    <ul>
+      <li><strong>On Android:</strong> Google Play Games Services (Saved Games), linked to your Google Play Games profile.</li>
+      <li><strong>On iOS:</strong> Apple Game Center saved games, stored in your iCloud account.</li>
+    </ul>
+    <p>The copy contains only the game data described in section A. It is stored in <em>your</em> Google or Apple account under their privacy policies; we cannot access it from outside the Game. You can decline or cancel the sign-in prompt and keep playing normally, in which case your save stays only on your device. On Android, the operating system may also include the save file in your device's Google backup if you have enabled device backup.</p>
+
+    <h3>D. Network Time Check</h3>
+    <p>To keep time-based rewards (offline earnings, daily rewards, seasons) fair, the Game reads the current time from the standard <code>Date</code> header of a small HTTPS request to a public Google endpoint (<code>google.com</code>), or to Cloudflare (<code>cloudflare.com</code>) as a fallback. This happens when the Game starts or returns from the background. No game data, identifiers, or personal information are included in this request. As with any internet request, the receiving service can see your device's IP address. If no network is available, the Game simply uses your device's clock and remains fully playable offline.</p>
+
     <h2>2. Third-Party Service Providers</h2>
-    <p>Idle Dino relies on trusted industry-standard third-party partners to provide advertising, mediation, and purchase fulfillment services. These third parties have their own privacy policies governing their processing of data:</p>
+    <p>Idle Dino relies on trusted industry-standard third-party partners to provide advertising, mediation, purchase fulfillment, cloud save, and network time services. These third parties have their own privacy policies governing their processing of data:</p>
 
     <div style="overflow-x: auto;">
       <table>
@@ -233,6 +244,21 @@
             <td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple Privacy Policy</a></td>
           </tr>
           <tr>
+            <td><strong>Google Play Games Services</strong></td>
+            <td>Android sign-in and cloud save (Saved Games)</td>
+            <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy & Terms</a></td>
+          </tr>
+          <tr>
+            <td><strong>Apple Game Center &amp; iCloud</strong></td>
+            <td>iOS sign-in and cloud save (Game Center saved games)</td>
+            <td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple Privacy Policy</a></td>
+          </tr>
+          <tr>
+            <td><strong>Google / Cloudflare</strong></td>
+            <td>Network time check (reading the time of a standard HTTPS response)</td>
+            <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy & Terms</a> &bull; <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Cloudflare Privacy Policy</a></td>
+          </tr>
+          <tr>
             <td><strong>Unity Ads</strong></td>
             <td>Video ad auction bidding and delivery mediation</td>
             <td><a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Unity Privacy Policy</a></td>
@@ -250,6 +276,8 @@
     <p>The collected data is used exclusively for the following lawful purposes:</p>
     <ul>
       <li><strong>Game Operation:</strong> Delivering smooth gameplay mechanics, saving and restoring your local game state.</li>
+      <li><strong>Cloud Save:</strong> Restoring your progress from your Google Play Games or Game Center account after reinstalling the Game or changing devices.</li>
+      <li><strong>Fair Play:</strong> Verifying the time so that changing the device clock cannot be used to collect time-based rewards early or repeatedly.</li>
       <li><strong>In-App Purchases:</strong> Validating purchases and permanently maintaining your entitlements (such as Remove Banner Ads, Remove All Ads, and Special Dino Packs) even after reinstalling the app.</li>
       <li><strong>Advertising:</strong> Serving banner ads and rewarded video ads that reward players with in-game boosts.</li>
       <li><strong>Security & Fraud Prevention:</strong> Detecting illegal bots, fraudulent ad clicking, and unauthorized payment tampering.</li>
@@ -260,8 +288,8 @@
     <p>If you are a resident of the European Economic Area (EEA) or the United Kingdom, our processing of your personal data is grounded in the following legal bases under the General Data Protection Regulation (GDPR):</p>
     <ul>
       <li><strong>Consent (Art. 6(1)(a) GDPR):</strong> Where required by law, we obtain your explicit consent for personalized advertising and tracking through Google’s User Messaging Platform (UMP) consent dialog and Apple’s App Tracking Transparency (ATT) framework. You can withdraw your consent at any time.</li>
-      <li><strong>Performance of a Contract (Art. 6(1)(b) GDPR):</strong> Delivering in-app purchases and digital goods that you requested.</li>
-      <li><strong>Legitimate Interests (Art. 6(1)(f) GDPR):</strong> Preventing fraud, securing our mobile application, and understanding aggregated crash diagnostics.</li>
+      <li><strong>Performance of a Contract (Art. 6(1)(b) GDPR):</strong> Delivering in-app purchases and digital goods that you requested, and keeping your game progress through cloud save.</li>
+      <li><strong>Legitimate Interests (Art. 6(1)(f) GDPR):</strong> Preventing fraud, securing our mobile application, keeping time-based rewards fair through the network time check, and understanding aggregated crash diagnostics.</li>
     </ul>
 
     <h2>5. Children’s Privacy (COPPA & GDPR-K)</h2>
@@ -280,6 +308,7 @@
     <p>You have the right to request confirmation of whether we process your data, access a copy of the data, and request the permanent deletion of your data. Because we do not require account registration or store personal email addresses in a game database, data deletion primarily involves:</p>
     <ol>
       <li>Deleting the application from your device (which erases all local save files).</li>
+      <li>Deleting the cloud save copy, which is not removed by uninstalling the Game: on Android through the game data settings of Google Play Games, and on iOS through your iCloud storage settings.</li>
       <li>Resetting or deleting your device’s Advertising Identifier via system settings.</li>
       <li>Submitting a deletion request for any associated anonymous purchase tokens by emailing us with your anonymous RevenueCat User ID (found in the game's Settings menu).</li>
     </ol>
@@ -295,7 +324,8 @@
 
     <h2>7. Data Retention & International Data Transfers</h2>
     <ul>
-      <li><strong>Gameplay Saves:</strong> Stored locally on your device indefinitely until you clear application cache or uninstall the Game.</li>
+      <li><strong>Gameplay Saves:</strong> Stored locally on your device indefinitely until you clear application cache or uninstall the Game. The cloud save copy remains in your Google Play Games or Game Center/iCloud account until you delete it there.</li>
+      <li><strong>Network Time Check:</strong> We do not store anything from this request. Google and Cloudflare may keep standard request logs under their own policies.</li>
       <li><strong>Third-Party Purchase & Ad Records:</strong> Maintained by RevenueCat, Google, and Apple in accordance with their regulatory, tax, accounting, and anti-fraud retention policies (typically up to 5–7 years for purchase receipts).</li>
       <li><strong>International Transfers:</strong> Our third-party partners operate servers globally, including in the United States, utilizing Standard Contractual Clauses (SCCs) to protect cross-border data.</li>
     </ul>
